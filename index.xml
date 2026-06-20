@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz sample garden</title>
+      <link>https://tosi29.github.io/quartz-sample</link>
+      <description>最新の10件 on Quartz sample garden</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>ADR 0001: サンプルGardenにQuartzを使う</title>
+    <link>https://tosi29.github.io/quartz-sample/adr/0001-use-quartz-for-sample-garden</link>
+    <guid>https://tosi29.github.io/quartz-sample/adr/0001-use-quartz-for-sample-garden</guid>
+    <description><![CDATA[ QuartzのWikiリンク、バックリンク、グラフ、検索をまとめて評価するため、サンプルGardenをQuartzで作る。 Context AIログや判断メモは階層だけでは探しにくい。リンクネットワークを確認したい。 Decision Quartzを採用し、30ページ程度の内容を用意する。 Consequences Markdown中心で移植しやすいが、Quartz固有機能への依存は記録する。. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ADR 0002: private寄りとpublic寄りを分ける</title>
+    <link>https://tosi29.github.io/quartz-sample/adr/0002-separate-private-and-public-notes</link>
+    <guid>https://tosi29.github.io/quartz-sample/adr/0002-separate-private-and-public-notes</guid>
+    <description><![CDATA[ 同じGarden内でも、個人用メモと公開候補を分けて扱う。 Decision private-patterns/ と public/ を分け、公開前の編集ルールをredaction-policyに置く。 Consequences 公開候補のレビュー導線が作れる一方、リンク先にprivate文脈が漏れない確認が必要。. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ADR 0003: GitHub Pages向けにdocsへ出力する</title>
+    <link>https://tosi29.github.io/quartz-sample/adr/0003-github-pages-docs-output</link>
+    <guid>https://tosi29.github.io/quartz-sample/adr/0003-github-pages-docs-output</guid>
+    <description><![CDATA[ mainブランチの/docsをGitHub Pagesで公開する想定に合わせる。 Decision ビルドコマンドは npx quartz build -d content -o docs とする。 Note このPRでは依頼によりdocs/の中身はコミットしない。ローカルで生成確認のみ行う。. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ADR 0004: Markdownを移植しやすく保つ</title>
+    <link>https://tosi29.github.io/quartz-sample/adr/0004-keep-content-portable</link>
+    <guid>https://tosi29.github.io/quartz-sample/adr/0004-keep-content-portable</guid>
+    <description><![CDATA[ 将来的なAstro Starlight移行を考え、本文は標準的なMarkdownを中心にする。 Decision Quartz固有のWikiリンクは使うが、過度なカスタムコンポーネントは避ける。 Consequences 移行時はWikiリンク変換が必要。ただし内容そのものは流用しやすい。. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>AIエージェントのデバッグログ例</title>
+    <link>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-18-agent-debugging</link>
+    <guid>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-18-agent-debugging</guid>
+    <description><![CDATA[ HermesでCI失敗を追跡した想定ログ。失敗ログを読み、仮説を立て、最小修正で再実行する流れを残す。 抜粋 User: テストが落ちている理由を調べて。 Agent: まず失敗したジョブ名とログ末尾を確認します。 知識化候補 再現コマンドはPR本文にも残す。 「修正したつもり」ではなく、実行結果を残す。 関連: ai-log-to-note-workflow, backlink-review-routine. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>AI調査スレッド例</title>
+    <link>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-19-research-thread</link>
+    <guid>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-19-research-thread</guid>
+    <description><![CDATA[ QuartzとStarlightの比較を依頼した想定ログ。結論だけでなく、検索語、除外理由、未確認事項を残す。 残す価値がある情報 調査時点 情報源のURL 判断に使った評価軸 関連: quartz-vs-starlight, 0004-keep-content-portable. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>会議要約ログ例</title>
+    <link>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-20-meeting-summary</link>
+    <guid>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-20-meeting-summary</guid>
+    <description><![CDATA[ 個人の判断メモに近い会議要約のサンプル。参加者名や社内固有情報は伏せた形にする。 決まったこと AIログはrawのまま溜めすぎない。 週次でMOCに接続する。 関連: weekly-garden-review, redaction-policy. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>プロンプト改善ログ例</title>
+    <link>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-21-prompt-iteration</link>
+    <guid>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-21-prompt-iteration</guid>
+    <description><![CDATA[ プロンプトの変更履歴を、成功/失敗の両方で残す例。 版変更結果v1要約だけ依頼根拠が薄いv2根拠URLと未確認事項を要求再利用しやすい 関連: prompt-pattern-library. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>コードレビュー支援ログ例</title>
+    <link>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-22-code-review</link>
+    <guid>https://tosi29.github.io/quartz-sample/ai-logs/2026-06-22-code-review</guid>
+    <description><![CDATA[ レビュー観点をAIに出させた想定ログ。 使えた観点 境界条件 セキュリティ影響 テストで固定すべき仕様 関連: review-checklist, vector-search-evaluation. ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Feature Tour / 機能確認ガイド</title>
+    <link>https://tosi29.github.io/quartz-sample/feature-tour</link>
+    <guid>https://tosi29.github.io/quartz-sample/feature-tour</guid>
+    <description><![CDATA[ このページは、人間がQuartzの使い勝手を確認するためのチェックリストです。 確認観点見るページ期待して見ることWikiリンクとバックリンクwiki-link-patterns[[...]] の相互参照、右ペインのBacklinksタグ運用tag-taxonomy#ai-log や #adr の一覧性グラフai-memory-mocAIログ・ADR・公開メモのつながり検索vector-search-evaluation専門語でのヒット感長文メモquartz-vs-starlight目次、スクロール、読書体験短文メモinbox-capture-rules小さい断片の扱いやすさAI会話ログ202... ]]></description>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

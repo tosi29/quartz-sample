@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="260" viewBox="0 0 920 260" role="img" aria-label="AIログから公開メモまでの知識化パイプライン">
+  <rect width="920" height="260" rx="24" fill="#f7fbfb"/>
+  <g font-family="sans-serif" font-size="18" fill="#284b63">
+    <rect x="40" y="82" width="150" height="86" rx="16" fill="#dff4f0" stroke="#84a59d"/>
+    <text x="70" y="120">AI会話ログ</text><text x="72" y="148" font-size="13">raw / private</text>
+    <rect x="250" y="82" width="150" height="86" rx="16" fill="#e8efff" stroke="#7b97aa"/>
+    <text x="286" y="120">抽出メモ</text><text x="283" y="148" font-size="13">claims / links</text>
+    <rect x="460" y="82" width="150" height="86" rx="16" fill="#fff7da" stroke="#d4b15f"/>
+    <text x="498" y="120">判断メモ</text><text x="491" y="148" font-size="13">ADR / tradeoff</text>
+    <rect x="670" y="82" width="190" height="86" rx="16" fill="#f3e8ff" stroke="#a78bfa"/>
+    <text x="722" y="120">公開ページ</text><text x="712" y="148" font-size="13">public / curated</text>
+    <path d="M198 125h44" stroke="#284b63" stroke-width="3" marker-end="url(#a)"/><path d="M408 125h44" stroke="#284b63" stroke-width="3" marker-end="url(#a)"/><path d="M618 125h44" stroke="#284b63" stroke-width="3" marker-end="url(#a)"/>
+    <text x="54" y="220" font-size="14">Quartz確認ポイント: 画像アセット、Wikiリンク、タグ、バックリンク、MOC、長文/短文メモの混在</text>
+  </g>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#284b63"/></marker></defs>
+</svg>
